@@ -1,0 +1,259 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+
+/* =========================
+   BOTÓN FLOTANTE
+========================= */
+
+.chatbot-button {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #6a11cb;
+    color: white;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.2s;
+}
+
+.chatbot-button:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   VENTANA DEL CHATBOT
+========================= */
+
+.chatbot {
+    position: fixed;
+
+    bottom: 95px;
+    right: 25px;
+
+    width: 350px;
+    height: 480px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+    display: none;
+
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.chatbot-header {
+    background: #6a11cb;
+
+    color: white;
+
+    padding: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.chatbot-header h3 {
+    font-size: 17px;
+}
+
+.chatbot-header span {
+    font-size: 12px;
+
+    opacity: 0.85;
+}
+
+.close-button {
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   MENSAJES
+========================= */
+
+.messages {
+    flex: 1;
+
+    padding: 15px;
+
+    background: #f5f5f5;
+
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 80%;
+
+    padding: 10px 12px;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+}
+
+
+/* Mensaje del bot */
+
+.bot {
+    background: white;
+
+    color: #333;
+
+    border: 1px solid #ddd;
+
+    border-bottom-left-radius: 3px;
+}
+
+
+/* Mensaje del usuario */
+
+.user {
+    background: #6a11cb;
+
+    color: white;
+
+    margin-left: auto;
+
+    border-bottom-right-radius: 3px;
+}
+
+
+/* =========================
+   PREGUNTAS RÁPIDAS
+========================= */
+
+.quick-options {
+    padding: 8px;
+
+    display: flex;
+
+    gap: 6px;
+
+    overflow-x: auto;
+
+    border-top: 1px solid #ddd;
+
+    background: white;
+}
+
+.quick-options button {
+    white-space: nowrap;
+
+    padding: 7px 10px;
+
+    border: 1px solid #6a11cb;
+
+    background: white;
+
+    color: #6a11cb;
+
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    font-size: 11px;
+}
+
+.quick-options button:hover {
+    background: #f0e5ff;
+}
+
+
+/* =========================
+   ÁREA DE TEXTO
+========================= */
+
+.input-area {
+    display: flex;
+
+    padding: 10px;
+
+    border-top: 1px solid #ddd;
+
+    background: white;
+}
+
+.input-area input {
+    flex: 1;
+
+    padding: 9px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    outline: none;
+}
+
+.input-area input:focus {
+    border-color: #6a11cb;
+}
+
+.input-area button {
+    margin-left: 7px;
+
+    padding: 9px 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #6a11cb;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background: #570fa8;
+}

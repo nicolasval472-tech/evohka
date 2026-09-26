@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EVOHKA - Chatbot</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <!-- Botón para abrir el chatbot -->
+    <button id="chatbotButton" class="chatbot-button">
+        💬
+    </button>
+
+
+    <!-- Ventana del chatbot -->
+    <div id="chatbot" class="chatbot">
+
+        <!-- Encabezado -->
+        <div class="chatbot-header">
+
+            <div>
+                <h3>🤖 EVOHKA Bot</h3>
+                <span>Asistente virtual</span>
+            </div>
+
+            <button id="closeButton" class="close-button">
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- Área de mensajes -->
+        <div id="messages" class="messages">
+
+            <div class="message bot">
+                👋 ¡Hola! Soy el asistente virtual de
+                <strong>EVOHKA</strong>.
+                <br><br>
+                Puedo ayudarte con información sobre propiedades,
+                registro y solicitudes de alquiler.
+            </div>
+
+        </div>
+
+
+        <!-- Preguntas rápidas -->
+        <div class="quick-options">
+
+            <button onclick="sendQuickMessage('¿Qué es EVOHKA?')">
+                ¿Qué es EVOHKA?
+            </button>
+
+            <button onclick="sendQuickMessage('¿Cómo me registro?')">
+                Registro
+            </button>
+
+            <button onclick="sendQuickMessage('¿Cómo publico una propiedad?')">
+                Publicar
+            </button>
+
+            <button onclick="sendQuickMessage('¿Cómo busco una propiedad?')">
+                Buscar
+            </button>
+
+        </div>
+
+
+        <!-- Campo para escribir -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Escribe tu pregunta..."
+            >
+
+            <button id="sendButton">
+                Enviar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
